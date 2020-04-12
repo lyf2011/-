@@ -1,0 +1,16 @@
+一、注册npm账号并登陆
+  npm login
+  根据提示输入账号、密码、邮箱
+二、执行发布命令
+  npm publish
+二、撤销24小时以内的npm包
+  npx force-unpublish package-name '删除原因'
+  
+  报错以下内容，
+  npm ERR! owner mutate Error getting user data for $(npm
+  npm ERR! code E404
+  npm ERR! 404 Not Found - GET http://registry.npmjs.org/-/user/org.couchdb.user
+
+  需要设置设置npm镜像为npm官方地址（完成后再设置为淘宝镜像）
+  npm config set registry=http://registry.npmjs.org
+  npm config set registry=https://registry.npm.taobao.org
